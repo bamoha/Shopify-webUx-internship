@@ -4,7 +4,7 @@
 
 # Shopify's Intern Challenge (Summer 2021)
 
-This is a project developed as part of **Shopify's Web Engineer Intern (Summer 2021)** challenge. Built with **React.js**, **Redux**, **Tailwind** and **Axios**.
+This is a project developed as part of **Shopify's Web Engineer Intern (Summer 2021)** challenge. Built with **React.js**, **Redux**, **Tailwind**, **Axios** and **Netlify** for deployment.
 
 ## Table of Contents
 
@@ -40,7 +40,7 @@ This is a project developed as part of **Shopify's Web Engineer Intern (Summer 2
 
 ## 1. <a name='Demo'></a> Demo
 
-[View Demo](https://lucaslacerdaux.github.io/Shopify-Summer2019/)
+[View Demo](https://shopify-internship.netlify.app)
 
 ## 2. <a name='Requirements'></a> Requirements
 
@@ -93,17 +93,15 @@ We were asked to try and polish the required features by crafting a nicer design
 
 [Link to the figma project](https://www.figma.com/file/63hlK89WnTpZHmsdcBxWqp/Untitled?node-id=1%3A18)
 
-<img height="200" width="200" src="https://res.cloudinary.com/taxapp/image/upload/v1610726576/Shopify%20internship/Desktop_-_1_3.png"/>
+<img height="400" width="400" src="https://res.cloudinary.com/taxapp/image/upload/v1610731091/Shopify%20internship/Screenshot_2021-01-15_at_18.15.57.png"/>
 
-![Search View](https://res.cloudinary.com/taxapp/image/upload/v1610726576/Shopify%20internship/Desktop_-_1_3.png)
+<img height="400" width="400" src="https://res.cloudinary.com/taxapp/image/upload/v1610731448/Shopify%20internship/Screenshot_2021-01-15_at_18.17.18.png"/>
 
-![Results View](https://res.cloudinary.com/taxapp/image/upload/v1610731448/Shopify%20internship/Screenshot_2021-01-15_at_18.17.18.png)
+<img height="400" width="400" src="https://res.cloudinary.com/taxapp/image/upload/v1610731461/Shopify%20internship/Screenshot_2021-01-15_at_18.23.28.png"/>
 
-![Results with nominated View](https://res.cloudinary.com/taxapp/image/upload/v1610731461/Shopify%20internship/Screenshot_2021-01-15_at_18.23.28.png)
+<img height="400" width="400" src="https://res.cloudinary.com/taxapp/image/upload/v1610731545/Shopify%20internship/Screenshot_2021-01-15_at_18.25.20.png"/>
 
-![Nominated View](https://res.cloudinary.com/taxapp/image/upload/v1610731545/Shopify%20internship/Screenshot_2021-01-15_at_18.25.20.png)
-
-![Details View](https://res.cloudinary.com/taxapp/image/upload/v1610731628/Shopify%20internship/Screenshot_2021-01-15_at_18.26.16.png)
+<img height="400" width="400" src="https://res.cloudinary.com/taxapp/image/upload/v1610731628/Shopify%20internship/Screenshot_2021-01-15_at_18.26.16.png"/>
 
 #### 4.2.1. <a name='DesignTokens'></a> Design Tokens
 
