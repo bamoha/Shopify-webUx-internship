@@ -5,9 +5,9 @@ import {
   getIDSfromQuery,
   setQueryStringWithoutPageReload,
 } from "../common/queryStrings";
-import { nominateMovie } from "../store/actions";
+import { nominateMovie, removeNominatedMovie } from "../store/actions";
 
-const Nomination = ({ categoryState, nominateMovie, movies }) => {
+const Nomination = ({ categoryState, nominateMovie, removeNominatedMovie, movies }) => {
   const [copied, setCopied] = useState(false)
 
   useEffect(() => {
@@ -37,7 +37,7 @@ const Nomination = ({ categoryState, nominateMovie, movies }) => {
       <div className="flex justify-center flex-wrap">
         {movies.map((movie, index) => (
           <div key={index} className="flex mt-5">
-            <Movie id={movie} num={index + 1} />
+            <Movie id={movie} removeNominatedMovie={removeNominatedMovie} />
           </div>
         ))
         }
@@ -52,6 +52,7 @@ const mapStateToProps = (state) => ({
 
 const mapDispatchToProps = (dispatch) => ({
   nominateMovie: (id) => dispatch(nominateMovie(id)),
+  removeNominatedMovie: (id) => dispatch(removeNominatedMovie(id))
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Nomination);

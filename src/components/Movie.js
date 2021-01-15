@@ -1,6 +1,4 @@
 import React from "react";
-import { connect } from "react-redux";
-import { removeNominatedMovie } from "../store/actions";
 import crossSVG from "../images/cross.svg";
 
 const Movie = ({ removeNominatedMovie, id }) => {
@@ -24,8 +22,4 @@ const Movie = ({ removeNominatedMovie, id }) => {
   )
 }
 
-const mapDispatchToProps = (dispatch) => ({
-  removeNominatedMovie: (id) => dispatch(removeNominatedMovie(id)),
-});
-
-export default connect(null, mapDispatchToProps)(Movie);
+export default Movie;

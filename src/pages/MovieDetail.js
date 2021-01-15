@@ -34,7 +34,7 @@ const MovieDetail = ({ getMovieDetails, id, movieDetails, goBack, nominations, n
       );
 
     return (
-      <div className="mx-auto w-3/4 md:w-full">
+      <div className="mx-auto md:w-1/2 sm:w-3/4">
         <div className="flex items-center mt-25">
           <img
             src={backSVG}
@@ -127,7 +127,7 @@ const MovieDetail = ({ getMovieDetails, id, movieDetails, goBack, nominations, n
         ) : (
             <button
               className="primary-nominated-btn mt-5 font-bold py-2 px-4"
-              onClick={() => nominateMovie(movieDetails.data.imdbID)}
+              onClick={() => nominateMovie(movieDetails.data)}
             >
               Nominate
           </button>
