@@ -93,6 +93,8 @@ We were asked to try and polish the required features by crafting a nicer design
 
 [Link to the figma project](https://www.figma.com/file/63hlK89WnTpZHmsdcBxWqp/Untitled?node-id=1%3A18)
 
+<img height="200" width="200" src="https://res.cloudinary.com/taxapp/image/upload/v1610726576/Shopify%20internship/Desktop_-_1_3.png"/>
+
 ![Search View](https://res.cloudinary.com/taxapp/image/upload/v1610726576/Shopify%20internship/Desktop_-_1_3.png)
 
 ![Results View](https://res.cloudinary.com/taxapp/image/upload/v1610731448/Shopify%20internship/Screenshot_2021-01-15_at_18.17.18.png)
