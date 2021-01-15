@@ -4,7 +4,7 @@
 
 # Shopify's Intern Challenge (Summer 2021)
 
-This is a project developed as part of **Shopify's Web Engineer Intern (Summer 2021)** challenge. Built with **React.js**, **Redux** and **Axios**.
+This is a project developed as part of **Shopify's Web Engineer Intern (Summer 2021)** challenge. Built with **React.js**, **Redux**, **Tailwind** and **Axios**.
 
 ## Table of Contents
 
@@ -44,7 +44,7 @@ This is a project developed as part of **Shopify's Web Engineer Intern (Summer 2
 
 ## 2. <a name='Requirements'></a> Requirements
 
-This application is dependent on the installation of Node.js
+This application is dependent on the installation of Node.js. And Node comes with NPM.
 
 - [Node.js](https://nodejs.org/en/)
 - [NPM](https://www.npmjs.com/)
@@ -54,7 +54,7 @@ This application is dependent on the installation of Node.js
 1. First, clone this repo using [Git](https://git-scm.com/) or download the [zip](https://github.com/LucasLacerdaUX/Shopify-Summer2019/archive/master.zip)
 
 ```
-git clone hhttps://github.com/LucasLacerdaUX/Shopify-Summer2019.git
+git clone https://github.com/bamoha/Shopify-webUx-internship
 ```
 
 2. Navigate to the project root folder and use this **npm** command to install the dependencies
@@ -90,6 +90,18 @@ Users should be able to:
 ### 4.2. <a name='DesignDecisions'></a> Design Decisions
 
 We were asked to try and polish the required features by crafting a nicer design. Hence, Before coding this project, a few design decisions had to be made to ensure the app provided a good user experience for everyone. This was done with _Figma_.
+
+[Link to the figma project](https://www.figma.com/file/63hlK89WnTpZHmsdcBxWqp/Untitled?node-id=1%3A18)
+
+![Search View](https://res.cloudinary.com/taxapp/image/upload/v1610726576/Shopify%20internship/Desktop_-_1_3.png)
+
+![Results View](https://res.cloudinary.com/taxapp/image/upload/v1610731448/Shopify%20internship/Screenshot_2021-01-15_at_18.17.18.png)
+
+![Results with nominated View](https://res.cloudinary.com/taxapp/image/upload/v1610731461/Shopify%20internship/Screenshot_2021-01-15_at_18.23.28.png)
+
+![Nominated View](https://res.cloudinary.com/taxapp/image/upload/v1610731545/Shopify%20internship/Screenshot_2021-01-15_at_18.25.20.png)
+
+![Details View](https://res.cloudinary.com/taxapp/image/upload/v1610731628/Shopify%20internship/Screenshot_2021-01-15_at_18.26.16.png)
 
 #### 4.2.1. <a name='DesignTokens'></a> Design Tokens
 
@@ -134,6 +146,8 @@ The components on this project were not only made as dumb as possible to ensure 
 
 ### 4.4. <a name='Implementation'></a> Implementation
 
+- This project uses a mobile first design approach. It takes into consideration the statistics on the [Percentage of all global web pages served to mobile phones from 2009 to 2018](https://www.statista.com/statistics/241462/global-mobile-phone-website-traffic-share/#:~:text=This%20statistic%20presents%20the%20share,all%20global%20web%20pages%20served.). The CSS was written to cater for mobile screens.
+
 - On Search of a movie name, the searchterm is sent to **redux** and **redux** uses **Axios** to request the searchterm from the [OMDB's API](http://www.omdbapi.com/apikey.aspx) .
 
 - The search response is dispatched in the **redux** action and hence, everywhere the search response is needed gets a state update.
@@ -158,6 +172,7 @@ The interface has been tested with both a keyboard, mouse and the Screen Reader 
 
 - [React.js](https://reactjs.org), using [create-react-app](https://facebook.github.io/create-react-app)
 - [Axios](https://github.com/axios/axios)
+- [Tailwind](https://tailwindcss.com/docs/)
 - [Redux](https://redux.js.org/)
 - [ESLint](https://eslint.org/) w/ [Shopify style guide](https://www.npmjs.com/package/eslint-plugin-shopify) + [Prettier](https://github.com/prettier/prettier)
 
@@ -167,7 +182,7 @@ Ps: All images on this documentation were hosted on cloudinary
 
 1. [Shopify style guide Guidelies](https://polaris.shopify.com/)
 2. [Accessibility Matters - Search Form](https://www.a11ymatters.com/pattern/accessible-search/)
-3. [Improving accessibility on GOV.UK search - Technology in Government](https://gdstechnology.blog.gov.uk/2014/08/14/improving-accessibility-on-gov-uk-search/)
+3. [Percentage of all global web pages served to mobile phones from 2009 to 2018](https://www.statista.com/statistics/241462/global-mobile-phone-website-traffic-share/#:~:text=This%20statistic%20presents%20the%20share,all%20global%20web%20pages%20served.)
 4. [Aria Live Regions | MDN](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Live_Regions)
 5. [Using aria-live | bitsofcode](https://bitsofco.de/using-aria-live/)
 6. [Search Landmark | ARIA Landmarks Example - W3C](https://www.w3.org/TR/wai-aria-practices/examples/landmarks/search.html)
