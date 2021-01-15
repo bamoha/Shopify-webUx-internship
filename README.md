@@ -111,9 +111,9 @@ The next step was to make sure every component had a well defined style for each
 
 ![Component States](https://res.cloudinary.com/taxapp/image/upload/v1610728177/Shopify%20internship/MacBook_-_2.png)
 
-### 4.3. <a name='FrameworkChoice'></a> Framework Choice
+### 4.3. <a name='FrameworkChoice'></a> Framework and Font Choice
 
-React is my framework of choice because it allows me to build out reusable components. Example is my Header, I use it in more than one place and so I created a reusable component out of it.
+React is my framework of choice because it allows me to build out reusable components in a very neat manner. It also makes it easier to handle state changes and its one of the most used frameworks out there, so there is a high chance that I would get an online solution once I encounter a problem. An Example of a reusable component I worked with is my Header, I use it in more than one place and so I created a reusable component out of it.
 
 ```
  import React from "react";
@@ -136,7 +136,9 @@ And its used wherever as:
  <PageHead title={"S H O P P I E S"} />
 ```
 
-The components on this project were not only made as dumb as possible to ensure maximum customization capabilities but were also individually documented to make it easier to use on other projects.
+The font chosen for this project is Poppins. Poppins was chosen because its a friendly and playfull font. It also gives a beautiful and welcoming view to the user.
+
+[Poppins can be found here](https://fonts.google.com/specimen/Poppins).
 
 ### 4.4. <a name='Implementation'></a> Implementation
 
