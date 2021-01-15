@@ -43,6 +43,7 @@ const getMovieDetails = (id) => async (dispatch) => {
 };
 
 const nominateMovie = (id) => (dispatch) => {
+  console.log(id)
   if (store.getState().nominations.movies.length === 5)
     toast.warn("You have nominated 05 movies", {
       position: "top-center",

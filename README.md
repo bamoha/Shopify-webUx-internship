@@ -93,15 +93,9 @@ We were asked to try and polish the required features by crafting a nicer design
 
 [Link to the figma project](https://www.figma.com/file/63hlK89WnTpZHmsdcBxWqp/Untitled?node-id=1%3A18)
 
-<img height="400" width="400" src="https://res.cloudinary.com/taxapp/image/upload/v1610731091/Shopify%20internship/Screenshot_2021-01-15_at_18.15.57.png"/>
+<img src="https://res.cloudinary.com/taxapp/image/upload/v1610731091/Shopify%20internship/Screenshot_2021-01-15_at_18.15.57.png"/>
 
-<img height="400" width="400" src="https://res.cloudinary.com/taxapp/image/upload/v1610731448/Shopify%20internship/Screenshot_2021-01-15_at_18.17.18.png"/>
-
-<img height="400" width="400" src="https://res.cloudinary.com/taxapp/image/upload/v1610731461/Shopify%20internship/Screenshot_2021-01-15_at_18.23.28.png"/>
-
-<img height="400" width="400" src="https://res.cloudinary.com/taxapp/image/upload/v1610731545/Shopify%20internship/Screenshot_2021-01-15_at_18.25.20.png"/>
-
-<img height="400" width="400" src="https://res.cloudinary.com/taxapp/image/upload/v1610731628/Shopify%20internship/Screenshot_2021-01-15_at_18.26.16.png"/>
+<img src="https://res.cloudinary.com/taxapp/image/upload/v1610731448/Shopify%20internship/Screenshot_2021-01-15_at_18.17.18.png"/>
 
 #### 4.2.1. <a name='DesignTokens'></a> Design Tokens
 
@@ -148,7 +142,9 @@ The components on this project were not only made as dumb as possible to ensure 
 
 - This project uses a mobile first design approach. It takes into consideration the statistics on the [Percentage of all global web pages served to mobile phones from 2009 to 2018](https://www.statista.com/statistics/241462/global-mobile-phone-website-traffic-share/#:~:text=This%20statistic%20presents%20the%20share,all%20global%20web%20pages%20served.). The CSS was written to cater for mobile screens.
 
-- On Search of a movie name, the searchterm is sent to **redux** and **redux** uses **Axios** to request the searchterm from the [OMDB's API](http://www.omdbapi.com/apikey.aspx) .
+- To make the application neater and easier to write, I employed the use of a CSS library called **Tailwind**. It has a bunch of classes that can be called without having to write too much custom data. This is employed in the HTML/CSS.
+
+- To Search a movie name, One types the name in the input field and the searchterm gotten is sent to **redux** and **redux** uses **Axios** to request the searchterm from the [OMDB's API](http://www.omdbapi.com/apikey.aspx) .
 
 - The search response is dispatched in the **redux** action and hence, everywhere the search response is needed gets a state update.
 
@@ -156,7 +152,9 @@ The components on this project were not only made as dumb as possible to ensure 
 
 - When displaying the results, the id state is retrieved from **redux** to show results wherever it is required such as the search result and the details page.
 
-- The details page also makes a call using **redux** to dispatch the details of a movie from the store. .
+- The details page also makes a call using **redux** to dispatch the details of a movie from the store.
+
+- The application shows a **No Poster** image if there is no poster.
 
 ### 4.5. <a name='Accessibility'></a> Accessibility
 

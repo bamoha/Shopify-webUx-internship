@@ -1,6 +1,7 @@
 import React from "react";
 import plusSVG from "../images/plus.svg";
 import minusSVG from "../images/minus.svg";
+import noPoster from "../images/noPoster.svg";
 
 const MovieText = ({
     data,
@@ -12,11 +13,20 @@ const MovieText = ({
     return (
         <div className="mb-1 flex py-3 px-5 movie-text" aria-live="polite">
             <div className="mr-4 w-16">
-                <img
-                    src={data.Poster}
-                    alt="Poster"
-                    className="home-poster rounded"
-                />
+                {data.Poster === "N/A" &&
+                    <img
+                        src={noPoster}
+                        alt="No Poster"
+                        className="home-poster rounded"
+                    />
+                }
+                {data.Poster !== "N/A" &&
+                    <img
+                        src={data.Poster}
+                        alt="Poster"
+                        className="home-poster rounded"
+                    />
+                }
             </div>
             <div className="flex w-full justify-between">
                 <div className="text-left">
