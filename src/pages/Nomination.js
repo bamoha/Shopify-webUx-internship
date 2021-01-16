@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { connect } from "react-redux";
-import Movie from "../components/Movie";
 import {
   getIDSfromQuery,
   setQueryStringWithoutPageReload,
 } from "../common/queryStrings";
 import { nominateMovie, removeNominatedMovie } from "../store/actions";
+import MovieNominated from "../components/MovieNominated";
 
 const Nomination = ({ categoryState, nominateMovie, removeNominatedMovie, movies }) => {
   const [copied, setCopied] = useState(false)
@@ -37,7 +37,7 @@ const Nomination = ({ categoryState, nominateMovie, removeNominatedMovie, movies
       <div className="flex justify-center flex-wrap">
         {movies.map((movie, index) => (
           <div key={index} className="flex mt-5">
-            <Movie id={movie} removeNominatedMovie={removeNominatedMovie} />
+            <MovieNominated id={movie} removeNominatedMovie={removeNominatedMovie} />
           </div>
         ))
         }

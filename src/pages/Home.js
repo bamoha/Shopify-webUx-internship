@@ -8,8 +8,8 @@ import searchSVG from "../images/search.svg";
 import errorSVG from "../images/error.svg";
 import nodata from "../images/nodata.svg";
 import ClipLoader from "react-spinners/ClipLoader";
-import MovieText from "../components/MovieText";
 import PageHead from "../components/PageHead";
+import MovieCard from "../components/MovieCard";
 
 
 const Home = ({ removeNominatedMovie, nominateMovie, nominations, movies, fetchMovies }) => {
@@ -74,7 +74,7 @@ const Home = ({ removeNominatedMovie, nominateMovie, nominations, movies, fetchM
     return (
       <div className="mt-5 mx-auto">
         {movies.data.map((movie) => (
-          <MovieText
+          <MovieCard
             key={movie.imdbID}
             data={movie}
             showDetails={() => {

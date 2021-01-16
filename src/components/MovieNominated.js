@@ -1,7 +1,7 @@
 import React from "react";
 import crossSVG from "../images/cross.svg";
 
-const Movie = ({ removeNominatedMovie, id }) => {
+const MovieNominated = ({ removeNominatedMovie, id }) => {
 
 
   return (
@@ -22,4 +22,4 @@ const Movie = ({ removeNominatedMovie, id }) => {
   )
 }
 
-export default Movie;
+export default MovieNominated;

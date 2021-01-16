@@ -30,7 +30,9 @@ This is a project developed as part of **Shopify's Web Engineer Intern (Summer 2
    \_ 4.5. [ Accessibility](#Accessibility)
 
 5. [ Technology Stack](#TechnologyStack)
-6. [ References](#References)
+6. [ Improvements and Future Prospects ](#Improvements)
+7. [ Challenges and things learnt ](#Challenges)
+8. [ References](#References)
 
 <!-- vscode-markdown-toc-config
 	numbering=true
@@ -51,7 +53,7 @@ This application is dependent on the installation of Node.js. And Node comes wit
 
 ## 3. <a name='Installing'></a> Installing
 
-1. First, clone this repo using [Git](https://git-scm.com/) or download the [zip](https://github.com/LucasLacerdaUX/Shopify-Summer2019/archive/master.zip)
+1. First, clone this repo using [Git](https://git-scm.com/) or download the [zip](https://github.com/bamoha/Shopify-webUx-internship/archive/master.zip)
 
 ```
 git clone https://github.com/bamoha/Shopify-webUx-internship
@@ -156,7 +158,7 @@ The font chosen for this project is Poppins. Poppins was chosen because its a fr
 
 - The details page also makes a call using **redux** to dispatch the details of a movie from the store.
 
-- The application shows a **No Poster** image if there is no poster.
+- I added a poster (if it was provided by the API) along with the required movie information, so the user has a better idea of what movie the API is referring to. The application shows a **No Poster** image if there is no poster.
 
 ### 4.5. <a name='Accessibility'></a> Accessibility
 
@@ -176,9 +178,20 @@ The interface has been tested with both a keyboard, mouse and the Screen Reader 
 - [Redux](https://redux.js.org/)
 - [ESLint](https://eslint.org/) w/ [Shopify style guide](https://www.npmjs.com/package/eslint-plugin-shopify) + [Prettier](https://github.com/prettier/prettier)
 
-Ps: All images on this documentation were hosted on cloudinary
+## 6. <a name='Improvements'></a> Improvements and Future Prospects
 
-## 6. <a name='References'></a> References
+- The application can be made into a progressive web application that can be saved on mobile devices. Progressive web apps give a mobile feel to web applications.
+- The app can be made to communicate with award organizers. So the award organizers are able to also see and relate with nominations made by the users of the app.
+- The design of the application can always be made better
+- For deployment, I would like to use Docker to containerize this app with a continuous integration pipeline to ensure maximum uptime
+
+## 7. <a name='Challenges'></a> Improvements and Future Prospects
+
+- This project was a great example of how important tools like Redux are when handling state across multiple components in an application. This is especially crucial as the complexity of the application increases. I was able to show a preview of how to work with redux in preparation with working with complex applications.
+- I mainly had challenges with the design, as I had to research on how best to show what was gotten from the API.
+- I also had challenges writing this docs as I wanted to make it as descriptive as possible.
+
+## 8. <a name='References'></a> References
 
 1. [Shopify style guide Guidelies](https://polaris.shopify.com/)
 2. [Accessibility Matters - Search Form](https://www.a11ymatters.com/pattern/accessible-search/)
@@ -190,3 +203,5 @@ Ps: All images on this documentation were hosted on cloudinary
 8. [Example 4 - Using ARIA landmarks to identify regions of a page](https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA11)
 9. [Introduction to the Reduced Motion Media Query - CSS-Tricks](https://css-tricks.com/introduction-reduced-motion-media-query/)
 10. [Success Criterion 2.5.5: Target Size](https://www.w3.org/WAI/WCAG21/Understanding/target-size.html)
+
+Ps: All images on this documentation were hosted on cloudinary
