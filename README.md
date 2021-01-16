@@ -185,7 +185,7 @@ The interface has been tested with both a keyboard, mouse and the Screen Reader 
 - The design of the application can always be made better
 - For deployment, I would like to use Docker to containerize this app with a continuous integration pipeline to ensure maximum uptime
 
-## 7. <a name='Challenges'></a> Improvements and Future Prospects
+## 7. <a name='Challenges'></a> Challenges and things learnt
 
 - This project was a great example of how important tools like Redux are when handling state across multiple components in an application. This is especially crucial as the complexity of the application increases. I was able to show a preview of how to work with redux in preparation with working with complex applications.
 - I mainly had challenges with the design, as I had to research on how best to show what was gotten from the API.
